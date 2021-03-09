@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  pbs:
+    build: .
+    ports: 
+      - "8007":"8007"
+    volumes:
+      - pbs:/mnt/pbs
+volumes:
+  pbs: {}
+

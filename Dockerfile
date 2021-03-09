@@ -1,5 +1,7 @@
 FROM debian:buster
 
+EXPOSE 8007/tcp
+
 #Install dependencies
 RUN apt-get update
 RUN apt-get install wget ca-certificates -y
